@@ -20,11 +20,11 @@ Ghi **trước khi vẽ**, mỗi người một dòng.
 
 | Mã | Frame xuất hiện | Frame cuối thấy được | Rẽ / dừng / đổi tốc độ ở frame | Bị che ở frame | Ghi chú |
 |---|---|---|---|---|---|
-| P1 |0|149|77|Khuất hoàn toàn 39–44; 7 frame che một phần cần xác định mốc|Người trong cửa hàng Vodafone; hiện lại ở frame 45|
-| P2 |0|149| | | |
-| P3 |0|149| | | |
-| P4 |0|146|| | |
-| P5 |0|105| | | |
+| P1 | 0 | 149 | 77 | Khuất hoàn toàn 39–44; 7 frame che một phần cần xác định mốc | Người trong cửa hàng Vodafone; hiện lại ở frame 45 |
+| P2 | 0 | 149 | | | |
+| P3 | 0 | 149 | | | |
+| P4 | 0 | 146 | | | |
+| P5 | 0 | 105 | | | |
 
 ## 2. Keyframe và thời gian (CP1, CP4)
 
