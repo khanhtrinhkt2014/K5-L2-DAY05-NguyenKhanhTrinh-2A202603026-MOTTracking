@@ -32,12 +32,12 @@ Số keyframe lấy từ kết quả `src/check_submission.py`.
 
 | Mã | Số keyframe | Keyframe ở frame | Số frame có mặt | Keyframe / 100 frame | Thời gian (phút) | Chỗ khó |
 |---|---|---|---|---|---|---|
-| P1 | 20 | 0, 4, 6, 9, 10, 11, 12, 20, 29, 30, 31, 36, 45, 55, 74, 84, 94, 104, 124, 134 | 144 | 13,9 | [Bổ sung] | Người trong cửa hàng bị che; cần xác định mốc occluded/outside và giữ cùng ID khi hiện lại |
-| P2 | 16 | 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 149 | 150 | 10,7 | [Bổ sung] | Đi gần P3, cần phân biệt hai người khi box chồng nhau |
-| P3 | 16 | 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 149 | 150 | 10,7 | [Bổ sung] | Đầu đoạn chỉ thấy một phần người sát mép phải; cần chỉnh box khi người đi vào khung và bao đủ cánh tay |
-| P4 | 7 | 0, 10, 20, 30, 40, 137, 140 | 120 | 5,8 | [Bổ sung] | Em bé nhỏ trong ảnh; cần kiểm tra đoạn outside 110–136 và lúc hiện lại ở frame 137 |
-| P5 | 7 | 0, 10, 20, 30, 40, 50, 100 | 110 | 6,4 | [Bổ sung] | Cần kiểm tra cờ che một phần và thời điểm kết thúc track sau frame 109 |
-| **Tổng** | **66** | — | **674** | **9,8** | **[Tổng thời gian]** | — |
+| P1 | 20 | 0, 4, 6, 9, 10, 11, 12, 20, 29, 30, 31, 36, 45, 55, 74, 84, 94, 104, 124, 134 | 144 | 13,9 | 25 | Người trong cửa hàng bị che; cần xác định mốc occluded/outside và giữ cùng ID khi hiện lại |
+| P2 | 16 | 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 149 | 150 | 10,7 | 15 | Đi gần P3, cần phân biệt hai người khi box chồng nhau |
+| P3 | 16 | 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 149 | 150 | 10,7 | 15 | Đầu đoạn chỉ thấy một phần người sát mép phải; cần chỉnh box khi người đi vào khung và bao đủ cánh tay |
+| P4 | 7 | 0, 10, 20, 30, 40, 137, 140 | 120 | 5,8 | 15 | Em bé nhỏ trong ảnh; cần kiểm tra đoạn outside 110–136 và lúc hiện lại ở frame 137 |
+| P5 | 7 | 0, 10, 20, 30, 40, 50, 100 | 110 | 6,4 | 15 | Cần kiểm tra cờ che một phần và thời điểm kết thúc track sau frame 109 |
+| **Tổng** | **66** | — | **674** | **9,8** | **85** | — |
 
 Keyframe / 100 frame của cả bài = tổng keyframe ÷ tổng số frame có mặt × 100
 = 66 ÷ 674 × 100 ≈ 9,8.
