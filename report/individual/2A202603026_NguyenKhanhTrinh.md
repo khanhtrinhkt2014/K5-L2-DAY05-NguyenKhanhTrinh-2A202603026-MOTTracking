@@ -8,8 +8,8 @@
 
 - Họ tên:Nguyễn Khánh Trình
 - MSSV:2A202603026
-- Mã đề (A/B/C):
-- Email:
+- Mã đề (A/B/C):B
+- Email:26ai.trinhnk@vinuni.edu.vn
 - Link repository:
 - Giờ bắt đầu:
 - Giờ kết thúc:
