@@ -18,9 +18,9 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 - **Sản phẩm:** bảng mục **1. Xem trước** trong báo cáo đã điền đủ 5 dòng.
 - **Cần hiểu:** vì sao phải xem trước khi vẽ (biết chỗ nào nội suy sẽ sai để đặt keyframe ngay từ đầu).
 - **Tự kiểm tra:**
-  - [ ] Task có đúng một job, từ frame **0** đến **149**, với nhãn `person`.
-  - [ ] Bấm `V` nhảy đúng 10 frame.
-  - [ ] Trong panel object không còn track của người mẫu.
+  - [x] Task có đúng một job, từ frame **0** đến **149**, với nhãn `person`.
+  - [x] Bấm `V` nhảy đúng 10 frame.
+  - [x] Trong panel object không còn track của người mẫu.
 
 ---
 
@@ -39,9 +39,9 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 - **Sản phẩm:** 5 track trong CVAT; bảng mục **2. Keyframe và thời gian** có thời gian từng người.
 - **Cần hiểu:** keyframe là bước "sửa" sau phần "đoán" của nội suy tuyến tính; nội suy đúng khi đi thẳng đều, sai khi rẽ, tăng / giảm tốc, lại gần / ra xa camera.
 - **Tự kiểm tra:**
-  - [ ] Panel object có đúng **5** object, mỗi cái mang biểu tượng track (không phải hàng chục shape rời).
-  - [ ] Tua `F` qua từng người: không có đoạn box trôi rõ khỏi người.
-  - [ ] **Mốc phút 100:** xong ít nhất 4 người. Chưa đạt thì báo coach.
+  - [x] Panel object có đúng **5** object, mỗi cái mang biểu tượng track (không phải hàng chục shape rời).
+  - [x] Tua `F` qua từng người: không có đoạn box trôi rõ khỏi người.
+  - [x] **Mốc phút 100:** xong ít nhất 4 người. Chưa đạt thì báo coach.
 
 ---
 
@@ -58,9 +58,9 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 - **Sản phẩm:** mục **3. Đoạn bị che** trong báo cáo, có 4 mốc frame, thời gian khuất, quyết định ID kèm lý do, 3 ảnh.
 - **Cần hiểu:** trả lời được câu "Cờ `outside` để làm gì, sao không xóa box rồi vẽ track mới?" (gợi ý: nhãn GT phải nói đây vẫn là người cũ, để tracker giữ ID đúng không bị chấm sai và ReID không học rằng đó là hai người).
 - **Tự kiểm tra:**
-  - [ ] Ở frame giữa đoạn khuất hẳn, người đó không có box hiển thị, nhưng vẫn là cùng object trong panel.
-  - [ ] ID trước và sau đoạn che giống nhau.
-  - [ ] Đoạn `occluded` không bị co box theo phần nhìn thấy.
+  - [x] Ở frame giữa đoạn khuất hẳn, người đó không có box hiển thị, nhưng vẫn là cùng object trong panel.
+  - [x] ID trước và sau đoạn che giống nhau.
+  - [x] Đoạn `occluded` không bị co box theo phần nhìn thấy.
 
 ---
 
@@ -74,8 +74,8 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 - **Sản phẩm:** bảng mục **4. Tự review ID** trong báo cáo, ít nhất 3 dòng (không có lỗi thì ghi một dòng "đã kiểm hai lượt, không lỗi") và phần tổng hợp theo loại lỗi.
 - **Cần hiểu:** phân biệt 7 loại lỗi trong `docs/GUIDELINE.md` mục 5; vì sao `id_switch` giữa hai người cùng lớp vẫn là lỗi nặng (vận tốc tính từ nhãn nhảy vọt, ví dụ 1,5 m trong 1/30 s ≈ 162 km/h).
 - **Tự kiểm tra:**
-  - [ ] Mỗi dòng trong bảng có loại lỗi đúng tên trong danh sách 7 mã.
-  - [ ] Mọi lỗi đã ghi đều có cột "Đã sửa?" là có, hoặc có lý do vì sao không sửa.
+  - [x] Mỗi dòng trong bảng có loại lỗi đúng tên trong danh sách 7 mã.
+  - [x] Mọi lỗi đã ghi đều có cột "Đã sửa?" là có, hoặc có lý do vì sao không sửa.
 
 ---
 
@@ -97,9 +97,9 @@ Quy ước nhãn đầy đủ: `docs/GUIDELINE.md`. Phím tắt: `docs/CVAT_CHEA
 - **Sản phẩm:** 2 file trong `src/exports/`; báo cáo đủ mục 1–6; job ở trạng thái completed.
 - **Cần hiểu:** đọc được từng cột của `gt.txt` (`docs/MOT_FORMAT.md`); vì sao frame `outside` không có dòng còn frame `occluded` vẫn có; MOTA khác IDF1 ở đâu.
 - **Tự kiểm tra:**
-  - [ ] Script in `Số track ID: 5` và không có dòng `[LỖI]`.
-  - [ ] Không có người nào bị cảnh báo `> 50 keyframe / 100 frame`.
-  - [ ] Mở `gt/gt.txt` trong zip, tìm một frame `outside` của người bị che: không có dòng nào cho ID đó.
+  - [x] Script in `Số track ID: 5` và không có dòng `[LỖI]`.
+  - [x] Không có người nào bị cảnh báo `> 50 keyframe / 100 frame`.
+  - [x] Mở `gt/gt.txt` trong zip, tìm một frame `outside` của người bị che: không có dòng nào cho ID đó.
 
 ---
 
