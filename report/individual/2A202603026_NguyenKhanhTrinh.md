@@ -52,16 +52,18 @@ Người bị che: `P_`
 
 | Mốc | Frame |
 |---|---:|
-| Bắt đầu bị che một phần (bật `occluded`) | |
-| Mất hẳn (bật `outside`) | |
-| Hiện lại (tắt `outside`) | |
-| Thấy rõ trở lại (tắt `occluded`) | |
+| Bắt đầu bị che một phần (bật `occluded`) | 29 |
+| Mất hẳn (bật `outside`) | 39 |
+| Hiện lại (tắt `outside`) | 45 |
+| Thấy rõ trở lại (tắt `occluded`) | 50 |
 
-- Thời gian khuất hẳn: ___ frame = ___ giây.
-- Quyết định: giữ cùng ID / tạo track mới.
+- Thời gian khuất hẳn: 6 frame = 0,2 giây.
+- Quyết định: giữ cùng ID.
 - Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
 
-...
+  - P1 khuất hoàn toàn trong 6 frame, nhỏ hơn ngưỡng 60 frame của lớp.
+  - Trước và sau khi khuất, P1 có ngoại hình tương đồng: áo tối màu, quần xám và dáng người khớp nhau.
+  - P1 xuất hiện lại trong khu vực cửa hàng Vodafone, gần vị trí trước khi bị người áo đen, quần be đi ngang che khuất.
 
 Ảnh chụp màn hình:
 
@@ -77,19 +79,17 @@ Loại lỗi dùng đúng một trong 7 mã: `id_switch`, `fragmentation`, `lost
 
 | Frame | Mã người | Loại lỗi | Mô tả một câu | Phát hiện ở lượt | Đã sửa? |
 |---:|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| 0–149 | P1–P5 | — | Đã kiểm hai lượt, không lỗi. | Cả hai lượt | Không cần sửa |
 
 Tổng hợp số lỗi theo loại:
 
 | `id_switch` | `fragmentation` | `lost` | `merge` | `false_track` | `drift` | `flag` |
 |---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 Lỗi nào chỉ lượt 2 (theo cảnh) mới thấy, lượt 1 (theo người) không thấy? Vì sao?
 
-...
+Không có lỗi nào chỉ được phát hiện ở lượt 2. Sau khi kiểm tra theo từng người và theo toàn cảnh, tôi không phát hiện thêm lỗi.
 
 ## 5. File xuất và kết quả tự kiểm (CP4)
 
@@ -113,15 +113,15 @@ Dán phần tóm tắt in ra từ `src/check_submission.py`:
 
 1. Nếu được gán lại, bạn sẽ đặt keyframe khác ở đâu? Vì sao?
 
-   ...
+   Nếu được gán lại, tôi sẽ đặt thêm keyframe cho P1 tại frame 27 vì đây là lúc người bắt đầu bị che một phần. Tôi sẽ chỉnh box bao toàn thân ước lượng và bật occluded, giúp box bám đúng người khi đi vào đoạn che khuất.
 
 2. Có chỗ nào bạn không chắc "cùng ID hay ID mới"? Bạn đã quyết định và ghi chú thế nào?
 
-   ...
+   Không có
 
 3. Một lỗi ID trong job của bạn (nếu không còn sót, chọn lỗi đã sửa) có thể làm xe tự lái dự đoán sai chuyển động của người đó như thế nào? Lỗi đó ảnh hưởng MOTA hay IDF1 nhiều hơn?
 
-   ...
+   Cả MOTA và IDF1 đều có thể giảm. Việc giữ sai ID kéo dài thường thể hiện rõ hơn ở IDF1; mức giảm cụ thể phụ thuộc số frame và các lỗi khác.
 
 ## Bonus (nếu làm)
 
