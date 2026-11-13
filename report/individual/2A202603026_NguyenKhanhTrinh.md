@@ -94,16 +94,18 @@ Lỗi nào chỉ lượt 2 (theo cảnh) mới thấy, lượt 1 (theo người)
 
 | Kiểm tra | Kết quả |
 |---|---|
-| Tên file MOT 1.1 | |
-| Tên file CVAT for video 1.1 | |
-| Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | |
-| Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | |
-| Job đã completed trên CVAT máy cá nhân | |
+| Tên file MOT 1.1 | NguyenKhanhTrinh_mot.zip |
+| Tên file CVAT for video 1.1 | NguyenKhanhTrinh_cvat_video.zip |
+| Số track ID khác nhau trong `gt/gt.txt` (phải là 5) | 5 |
+| Frame `outside` không có dòng trong `gt.txt` (đúng / sai) | Đúng — track 1 không có dòng tại frame CVAT 39–44 |
+| Job đã completed trên CVAT máy cá nhân | Đã completed |
 
 Dán phần tóm tắt in ra từ `src/check_submission.py`:
 
 ```text
-...
+=== Tóm tắt ===
+  Lỗi: 0   |   Cảnh báo: 0
+  Đạt. Dán phần tóm tắt này vào báo cáo mục 5.
 ```
 
 ## 6. Ba câu kết
