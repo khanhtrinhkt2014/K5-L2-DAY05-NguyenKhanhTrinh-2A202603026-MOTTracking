@@ -6,8 +6,8 @@
 
 ## 0. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên:Nguyễn Khánh Trình
+- MSSV:2A202603026
 - Mã đề (A/B/C):
 - Email:
 - Link repository:
