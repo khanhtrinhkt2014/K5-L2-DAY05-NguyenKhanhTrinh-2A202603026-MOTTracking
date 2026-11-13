@@ -29,11 +29,11 @@ Sau bài lab, bạn có thể:
 
 ## Chuẩn bị trước buổi
 
-- [ ] [Chạy script CVAT local](docs/CVAT_LOCAL_SETUP.md), nhập MSSV, mở link job và kiểm tra frame 0–149.
-- [ ] Đã xem slide lý thuyết Ngày 5, nhất là phần keyframe, `occluded` / `outside`, năm lỗi ID, MOTA / IDF1.
-- [ ] Ôn phím `N` `F` `D` `V` `C` `K` `O` `Q` `M` `Ctrl+S` (bảng ở `docs/CVAT_CHEATSHEET.md`).
-- [ ] Máy có Python 3.11 trở lên (`python --version`).
-- [ ] Mở **bảng nhận diện P1–P5** của đề A/B/C theo đường dẫn script in ra.
+- [x] [Chạy script CVAT local](docs/CVAT_LOCAL_SETUP.md), nhập MSSV, mở link job và kiểm tra frame 0–149.
+- [x] Đã xem slide lý thuyết Ngày 5, nhất là phần keyframe, `occluded` / `outside`, năm lỗi ID, MOTA / IDF1.
+- [x] Ôn phím `N` `F` `D` `V` `C` `K` `O` `Q` `M` `Ctrl+S` (bảng ở `docs/CVAT_CHEATSHEET.md`).
+- [x] Máy có Python 3.11 trở lên (`python --version`).
+- [x] Mở **bảng nhận diện P1–P5** của đề A/B/C theo đường dẫn script in ra.
 
 ## Cách bắt đầu
 
